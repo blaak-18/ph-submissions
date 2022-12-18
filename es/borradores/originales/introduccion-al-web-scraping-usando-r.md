@@ -30,7 +30,7 @@ Para poder completar los distintos pasos que ilustraremos necesitarás:
 - Al menos la versión 4.1 de R, ya que utilizaremos el operador "pipe" de R base (`|>`) que está disponible desde mayo de 2021. Puedes ejecutar `R.version` para revisar cuál es la versión que tienes instalada (o fijarte en el mensaje que se imprime en la consola cuando inicias R). De todos modos, deberías obtener los mismos resultados si utilizas el "pipe" del paquete magrittr (`%>%`)
 - Los paquetes **rvest**, **stringr** y **readr**
 
-Si bien no es necesario utilizar RStudio para completar la lección, las capturas de pantalla que se incluyen provienen de ese programa. Algo similar ocurre respecto del navegador. Si bien puedes usar cualquiera, para las capturas de pantalla se utilizó Firefox.
+Si bien no es necesario utilizar [RStudio](https://es.wikipedia.org/wiki/RStudio) para completar la lección, las capturas de pantalla que se incluyen provienen de ese programa. Algo similar ocurre respecto del navegador. Si bien puedes usar cualquiera, para las capturas de pantalla se utilizó Firefox.
 
 Los datos que extraeremos los guardaremos en una carpeta llamada "discursos", por lo que es necesario que la crees en tu directorio de trabajo (por ejemplo, con la función `dir.create("discursos")`).
 
