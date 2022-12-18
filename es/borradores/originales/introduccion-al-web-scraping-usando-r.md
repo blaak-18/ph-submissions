@@ -37,7 +37,7 @@ Los datos que extraeremos los guardaremos en una carpeta llamada "discursos", po
 
 ## ¿Qué es el rascado web o web scraping?
 
-_web scraping_ es una técnica que nos permite extraer datos publicados en un sitio web. A través de ella "rascamos" el código html de una página para obtener aquellas secciones que nos interesan, por ejemplo, tablas, párrafos con texto, enlaces, imágenes, etc.
+_Web scraping_ es una técnica que nos permite extraer datos publicados en un sitio web. A través de ella "rascamos" el código html de una página para obtener aquellas secciones que nos interesan, por ejemplo, tablas, párrafos con texto, enlaces, imágenes, etc.
 
 Para poder entender mejor cómo funciona este procedimiento, es necesario que revisemos algunos aspectos básicos acerca de cómo está construida una página web. Ten en cuenta que esta será una explicación simplificada, que busca destacar solo aquellos elementos que resultan relevantes cuando hacemos _web scraping_, es decir, no una explicación exhaustiva. Si ya tienes claro qué es un elemento html, una clase o un "id", quizás prefieras saltarte esta sección y seguir con la siguiente.
 
