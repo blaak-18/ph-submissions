@@ -7,15 +7,15 @@ slug: introduccion-al-web-scraping-usando-r
 
 {% include toc.html %}
 
-En esta lección introduciremos la técnica de adquisición de datos conocida como rascado web o _web scraping_, la que nos permite extraer contenido publicado en una página web. Al tratarse de la primera lección de una serie sobre este tema, en ella introduciremos algunos conceptos que son relevantes para aplicar mejor este procedimiento, así como el paso a paso para implementarlo.
+En esta lección introduciremos la técnica de adquisición de datos conocida como rascado web o _web scraping_, la cual nos permite extraer contenido publicado en una página web. Al tratarse de la primera lección de una serie sobre este tema, introduciremos algunos conceptos que son relevantes para aplicar mejor este procedimiento, así como el paso a paso para implementarlo.
 
 Los objetivos de aprendizaje de esta primera lección son:
 
-- conocer los elementos básicos de la estructura de un sitio web necesarios para extraer su contenido
+- Conocer los elementos básicos de la estructura de un sitio web necesarios para extraer su contenido
 
-- comprender qué es lo que caracteriza al web scraping _ético_
+- Comprender qué es lo que caracteriza al web scraping _ético_
 
-- aplicar estrategias para extraer desde una página web datos que estén en formato de bloque de texto
+- Aplicar estrategias para extraer desde una página web datos que estén en formato de bloque de texto
 
 
 Este tutorial se divide en tres secciones. En la primera, revisaremos algunas de las características generales de una página web que es relevante conocer cuando hacemos _web scraping_. En la segunda, discutiremos algunas consideraciones respecto de la dimensión ética de esta técnica, es decir, cómo podemos determinar no solo si es viable extraer los datos de una página, sino también si es algo que podemos hacer y qué condiciones debemos respetar. En la tercera parte haremos un primer ejercicio de extracción que nos permitirá conocer el flujo de trabajo habitual en la aplicación de este tipo de técnica. Para ello, extraeremos los discursos de asunción del cargo de los dos últimos presidentes de Chile de la página oficial de la presidencia de ese país.
