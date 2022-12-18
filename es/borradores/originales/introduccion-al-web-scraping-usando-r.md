@@ -13,7 +13,7 @@ Los objetivos de aprendizaje de esta primera lección son:
 
 - Conocer los elementos básicos de la estructura de un sitio web necesarios para extraer su contenido
 
-- Comprender qué es lo que caracteriza al web scraping _ético_
+- Comprender qué es lo que caracteriza al web scraping ético
 
 - Aplicar estrategias para extraer desde una página web datos que estén en formato de bloque de texto
 
@@ -37,9 +37,9 @@ Los datos que extraeremos los guardaremos en una carpeta llamada "discursos", po
 
 ## ¿Qué es el rascado web o web scraping?
 
-El web scraping es una técnica que nos permite extraer datos publicados en un sitio web. A través de ella "rascamos" el código html de una página para obtener aquellas secciones que nos interesan, como por ejemplo, tablas, párrafos con texto, enlaces, imágenes, etc.
+El _web scraping_ es una técnica que nos permite extraer datos publicados en un sitio web. A través de ella "rascamos" el código html de una página para obtener aquellas secciones que nos interesan, por ejemplo, tablas, párrafos con texto, enlaces, imágenes, etc.
 
-Para poder entender mejor cómo funciona este procedimiento, es necesario que revisemos algunos aspectos básicos acerca de cómo está construida una página web. Ten en cuenta que esta será una explicación simplificada, que busca destacar solo aquellos elementos que resultan relevantes cuando hacemos web scraping, no una explicación exhaustiva. Si ya tienes claro qué es un elemento html, una clase o un id, quizás prefieras saltarte esta sección y seguir con la siguiente.
+Para poder entender mejor cómo funciona este procedimiento, es necesario que revisemos algunos aspectos básicos acerca de cómo está construida una página web. Ten en cuenta que esta será una explicación simplificada, que busca destacar solo aquellos elementos que resultan relevantes cuando hacemos _web scraping_, no una explicación exhaustiva. Si ya tienes claro qué es un elemento html, una clase o un "id", quizás prefieras saltarte esta sección y seguir con la siguiente.
 
 ### Una página web = archivo de texto etiquetado
 
