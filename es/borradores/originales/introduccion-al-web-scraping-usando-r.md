@@ -18,7 +18,7 @@ Los objetivos de aprendizaje de esta primera lección son:
 - Aplicar estrategias para extraer desde una página web datos que estén en formato de bloque de texto
 
 
-Este tutorial se divide en tres secciones. En la primera, revisaremos algunas de las características generales de una página web que es relevante conocer cuando hacemos _web scraping_. En la segunda, discutiremos algunas consideraciones respecto de la dimensión ética de esta técnica, es decir, cómo podemos determinar no solo si es viable extraer los datos de una página, sino también si es algo que podemos hacer y qué condiciones debemos respetar. En la tercera, haremos un primer ejercicio de extracción que nos permitirá conocer el flujo de trabajo habitual en la aplicación de este tipo de técnica. Para ello, extraeremos los discursos de asunción del cargo de los dos últimos presidentes de Chile de la página oficial de la presidencia de ese país.
+Este tutorial se divide en tres secciones. En la primera, revisaremos algunas de las características generales de una página web que es relevante conocer cuando hacemos _web scraping_. En la segunda, discutiremos algunas consideraciones respecto de la dimensión ética de esta técnica, es decir, cómo podemos determinar no solo si es viable extraer los datos de una página, sino también si es algo que podemos hacer y qué condiciones debemos respetar. En la tercera, haremos un primer ejercicio de extracción que nos permitirá conocer el flujo de trabajo habitual en la aplicación de este tipo de técnica. Para ello, extraeremos de la página oficial de la presidencia de Chile los discursos de asunción al cargo de los dos últimos presidentes de ese país.
 
 
 ## Prerrequisitos
