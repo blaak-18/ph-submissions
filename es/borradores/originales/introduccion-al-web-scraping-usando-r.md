@@ -23,7 +23,7 @@ Este tutorial se divide en tres secciones. En la primera, revisaremos algunas de
 
 ## Prerrequisitos
 
-En esta lección mostraremos cómo hacer web scraping usando [R](https://es.wikipedia.org/wiki/R_(lenguaje_de_programaci%C3%B3n)). Las explicaciones que daremos asumen que ya tienes cierto grado de familiaridad con este lenguaje de programación. Por ejemplo, sabes cómo ejecutar el código, cómo instalar y activar paquetes, y cómo guardar un script y un archivo con datos en tu directorio de trabajo. Si no has utilizado R antes, te sugerimos revisar primero los tutoriales [_Datos tabulares en R_](/es/lecciones/datos-tabulares-en-r) y [_Administración de datos en R_](/es/lecciones/administracion-de-datos-en-r), que te permitirán adquirir la base necesaria.
+En esta lección mostraremos cómo hacer web scraping usando [R](https://es.wikipedia.org/wiki/R_(lenguaje_de_programaci%C3%B3n)). Las explicaciones que daremos asumen que ya tienes cierto grado de familiaridad con este lenguaje de programación. Por ejemplo, sabes cómo ejecutar el código, cómo instalar y activar paquetes, y cómo guardar un script y un archivo con datos en tu directorio de trabajo. Si no has utilizado R antes, te sugerimos revisar primero los tutoriales [Datos tabulares en R](/es/lecciones/datos-tabulares-en-r) y [Administración de datos en R](/es/lecciones/administracion-de-datos-en-r), que te permitirán adquirir la base necesaria.
 
 Para poder completar los distintos pasos que ilustraremos necesitarás:
 
