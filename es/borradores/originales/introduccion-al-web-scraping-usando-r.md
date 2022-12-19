@@ -228,7 +228,7 @@ Ahora ya tenemos claro qué parte del código html es la que nos interesa (`#mai
 
 Ahora que tenemos claro cómo está etiquetado el contenido de la página que nos interesa, usaremos R para hacer la extracción.
 
-Lo primero que haremos será cargar los paquetes que utilizaremos en el proceso. Todos están disponibles en CRAN, por lo que se pueden instalar con la función `install.packages()`:
+Lo primero que haremos será cargar los paquetes que utilizaremos en el proceso. Todos están disponibles en [CRAN](https://cran.r-project.org/), por lo que se pueden instalar con la función `install.packages()`:
 
 ```r
 library(rvest)
@@ -237,7 +237,7 @@ library(readr)
 ```
 
 - **rvest** es el paquete que nos sirve para importar el código html a R y extraer los elementos de la página que nos interesan
-- **stringr** está enfocado en el manejo de cadenas de texto (conocidas en inglés com o _strings_); nos servirá para hacer algunas modificaciones en el formato del texto
+- **stringr** está enfocado en el manejo de cadenas de texto (conocidas en inglés como _strings_); nos servirá para hacer algunas modificaciones en el formato del texto
 - **readr** se utiliza para importar y guardar archivos de texto plano (como csv y txt) y lo usaremos para guardar localmente en nuestro computador el resultado de nuestra extracción
 
 Como mencionamos anteriormente, en este tutorial utilizaremos el operador "pipe" de R Base (`|>`). Si prefieres utilizar `%>%`, tendrías que cargar también el paquete **magrittr** o **dplyr**[^2].
@@ -293,7 +293,7 @@ Ya tenemos el primer documento para nuestro corpus. Nuestro siguiente paso será
 
 Ahora que tenemos el primer texto, lo guardaremos localmente en nuestro computador. Para eso crearemos una carpeta llamada "discursos". Puedes crearla como mejor te parezca: ejecutando `dir.create("discursos")` en la consola, usando la opción "+ Folder" de la esquina superior izquierda del panel Files de RStudio, o directamente en el explorador de archivos de tu computador.
 
-Es importante detenerse un momento a pensar en qué metadatados es importante incluir en el nombre del archivo al guardarlo. Por ejemplo, sería relevante saber al leer el nombre del archivo quién emitió ese discurso y cuándo: `2022_boric.txt`. Pero si nuestro corpus eventualmente incluirá discursos de otros países, entonces necesitaríamos incluir esa variable en el nombre del archivo, por ejemplo, utilizando el código ISO 2 para nombres de países: `cl_2022_boric.txt`. Y si en algún momento quisiéramos incluir otros tipos de discursos, habría que indicar de alguna forma que este archivo corresponde al que se emitió luego de asumir el cargo: `cl_2022_boric_asuncion-cargo.txt`. Si te fijas, usamos guiones bajos (`_`) para separar las cuatro variables incluidas en el nombre del archivo (país, año, presidente, tipo de discurso) y un guión para separar las palabras cuando una variable tenía más de una ("asuncion-cargo"). Es importar prestar atención a estos detalles, ya que en el futuro nos pueden ayudar a hacer más fácil el proceso de trabajo con nuestros datos.  
+Es importante detenerse un momento a pensar qué metadatados es necesario incluir en el nombre del archivo al guardarlo. Por ejemplo, al leer el nombre del archivo, sería relevante saber quién emitió ese discurso y cuándo: `2022_boric.txt`. Pero si nuestro corpus eventualmente incluirá discursos de otros países, entonces necesitaríamos integrar esa variable en el nombre del archivo, por ejemplo, utilizando el código ISO 2 para nombres de países: `cl_2022_boric.txt`. Y si en algún momento quisiéramos incorporar otros tipos de discursos, habría que indicar de alguna forma que este archivo corresponde al que se emitió luego de asumir el cargo: `cl_2022_boric_asuncion-cargo.txt`. Si te fijas, usamos guiones bajos (`_`) para separar las cuatro variables incluidas en el nombre del archivo (país, año, presidente, tipo de discurso) y un guión para separar las palabras cuando una variable tenía más de una ("asuncion-cargo"). Es importar prestar atención a estos detalles, ya que en el futuro nos pueden ayudar a hacer más fácil el proceso de trabajo con nuestros datos.  
 
 En esta ocasión agregaremos esas cuatro variables a nuestro nombre de archivo: El código para guardar el discurso quedaría así:
 
@@ -308,7 +308,7 @@ Esa línea de código le está pidiendo a R que escriba el contenido del objeto 
 {% include figure.html filename="introduccion-al-web-scraping-usando-r-14.png" caption="Así se ve el texto en el archivo que acabamos de guardar" alt="Captura de pantalla de RStudio. En el panel superior izquierdo está abierto el archivo en el que acabamos de guardar el discurso. En el panel 'Files' abajo a la derecha se ve el archivo guardado" %}
 
 
-Podemos observar que el texto tiene dos saltos de líneas entre los párrafos. Si bien eso no es un problema que afecte algún análisis posterior del texto, quizás podríamos querer que quedara solo un salto de línea entre los párrafos porque nos interesa hacer una edición digital de estos discursos en el que ese es el formato requerido. Para resolver esta situación, podemos usar el paquete **stringr**, que está enfocado en el trabajo con cadenas de textos. La función `str_replace_all()` (_remplazar todo_) nos permite buscar un patrón en una cadena de texto y remplazarlo por otro.
+Podemos observar que el texto tiene dos saltos de líneas entre los párrafos. Si bien eso no es un problema que afecte algún análisis posterior del texto, quizás podríamos querer que quedara solo un salto de línea entre los párrafos porque nos interesa hacer una edición digital de estos discursos en el que ese es el formato requerido. Para resolver esta situación, podemos usar el paquete "stringr", que está enfocado en el trabajo con cadenas de textos. La función `str_replace_all()` (_remplazar todo_) nos permite buscar un patrón en una cadena de texto y remplazarlo por otro.
 
 Para saber qué patrón buscar, imprimamos el objeto `discurso_boric` en la consola. Como es largo, lo primero que veremos será el final. Comparémoslo con la parte final del texto del archivo que tenemos en el panel superior.
 
@@ -323,7 +323,7 @@ Lo que haremos ahora será pedirle a R que con la función `str_replace_all()`  
 discurso_boric <- str_replace_all(discurso_boric, pattern = "\n\n", replacement = "\n")
 ```
 
-El paquete **stringr** tiene una función que se llama `str_replace()` que solo hace el remplazo en el primer elemento que encuentra. Procura escoger `str_replace_all` para que haga el cambio todas las veces que encuentre el patrón que nos interesa.
+El paquete "stringr" tiene una función que se llama `str_replace()` que solo hace el remplazo en el primer elemento que encuentra. Procura escoger `str_replace_all` para que haga el cambio todas las veces que encuentre el patrón que nos interesa.
 Luego de ejecutar la modificación, volveremos a guardar nuestro objeto para que la versión del archivo txt refleje estos últimos cambios.
 
 
@@ -337,11 +337,11 @@ write_lines(discurso_boric, "discursos/cl_2022_boric_asuncion-cargo.txt")
 
 Quizás te estés preguntando si acaso no era más rápido copiar el discurso directamente del sitio web y pegarlo en un archivo txt. Si solo nos interesa un texto de un sitio, probablemente eso sea lo más rápido. Pero si necesitamos más de un texto, lo conveniente es hacerlo de forma programática. No solo por tiempo, sino porque así podemos evitar posibles errores humanos en el proceso. Además, incluso si se trata de un solo texto, tener el código para extraerlo permite que otras personas puedan repetir el proceso y obtener el mismo resultado, lo que favorece la reproducibilidad de nuestros flujos de trabajo.
 
-El mismo código que escribimos para extraer el discurso de Gabriel Boric, debería servirnos para extraer el de Sebastián Piñera. Así que lo que haremos ahora será tomar el bloque de código que escribimos anteriormente y modificar tres cosas:
+El mismo código que escribimos para extraer el discurso de Gabriel Boric, debería servirnos para extraer el de [Sebastián Piñera](https://es.wikipedia.org/wiki/Sebasti%C3%A1n_Pi%C3%B1era). Así que lo que haremos ahora será tomar el bloque de código que escribimos anteriormente y modificar tres cosas:
 
-- el nombre de los objetos que creamos
-- la url desde la que haremos la extracción
-- el nombre del archivo en que guardaremos el texto procesado.
+- El nombre de los objetos que creamos
+- La url desde la que haremos la extracción
+- El nombre del archivo en que guardaremos el texto procesado
 
 El código quedaría así:
 
@@ -367,11 +367,11 @@ En [este archivo](INSERTAR EL ENLACE CUANDO YA SEPAMOS DÓNDE VA A QUEDAR EL ARC
 
 ## Síntesis
 
-En esta lección conocimos cuáles son las características centrales de una página web que nos permiten extraer su contenido usando técnicas como el web scraping. Discutimos también acerca de cómo podemos resguardar que el procedimiento que implementamos se ajuste a las condiciones de uso del sitio del que nos interesa extraer datos. Finalmente, hicimos un primer ejercicio en el que seguimos el flujo de trabajo completo y vimos las ventajas que tiene trabajar de este modo cuando necesitamos repetir una tarea de extracción.
+En esta lección conocimos cuáles son las características centrales de una página web que nos permiten extraer su contenido usando técnicas como el _web scraping_. Discutimos también acerca de cómo podemos resguardar que el procedimiento que implementamos se ajuste a las condiciones de uso del sitio del que nos interesa extraer datos. Finalmente, hicimos un primer ejercicio en el que seguimos el flujo de trabajo completo y revisamos las ventajas que tiene trabajar de este modo cuando necesitamos repetir una tarea de extracción.
 
 ## Próximos pasos
 
-Esta es la primera lección de la serie sobre web scraping usando R. En la próxima lección aprenderemos a extraer tablas y a partir de la tercera veremos cómo crear funciones que nos permitan extraer datos de varias páginas al mismo tiempo.
+Esta es la primera lección de la serie sobre _web scraping_ usando R. En la próxima, aprenderemos a extraer tablas, y a partir de la tercera, veremos cómo crear funciones que nos permitan extraer datos de varias páginas al mismo tiempo.
 
 
 ## Notas
