@@ -169,7 +169,7 @@ Como señalamos anteriormente, es importante tener en cuenta que no todos los si
 ## Ejercicio práctico: extraer el texto contenido en un sitio web
 
 Ahora que tenemos clara la forma de funcionamiento de un sitio web y cómo averiguar de qué forma podemos interactuar con él, haremos un primer ejercicio de extracción de datos. En él mostraremos cómo extraer texto contenido en una página. Este método resulta particularmente útil cuando, por ejemplo, necesitamos compilar un corpus de textos disponibles en línea.
-En esta ocasión, usaremos como ejemplos los discursos de asunción de los dos últimos presidentes de Chile. Los discursos que extraeremos se encuentran disponibles en [la página de prensa de la presidencia Chile](https://prensa.presidencia.cl/). Este podría ser el paso inicial para compilar, por ejemplo, un corpus de discursos de asunción del cargo que posteriormente podríamos analizar con alguna técnica de minería de textos.
+En esta ocasión, usaremos como ejemplos los discursos de asunción de los dos últimos presidentes de Chile. Los discursos que extraeremos se encuentran disponibles en [la página de prensa de la presidencia Chile](https://prensa.presidencia.cl/). Este podría ser el paso inicial para compilar, por ejemplo, un corpus de discursos de asunción al cargo que posteriormente podríamos analizar con alguna técnica de minería de textos.
 
 Veamos ahora el paso a paso para realizar la extracción.
 
