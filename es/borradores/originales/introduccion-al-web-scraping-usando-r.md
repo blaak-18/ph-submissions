@@ -185,7 +185,7 @@ Como en esta ocasión haremos solo una "llamada" al sitio web, no es necesario p
 
 ### Paso 2. Identificar la etiqueta que contiene los datos que nos interesan
 
-Como veremos a lo largo de esta serie de lecciones, los pasos para hacer _web scraping_ suelen ser los mismos siempre. Lo que varía cada vez es el elemento, la clase o el id en el que se encuentra el contenido queremos extraer de una determinada página.
+Como veremos a lo largo de esta serie de lecciones, los pasos para hacer web scraping suelen ser los mismos siempre. Lo que varía cada vez es el elemento, la clase o el id en el que se encuentra el contenido queremos extraer de una determinada página.
 ¿Cómo podemos saber cuál es la etiqueta del contenido que nos interesa? Existen dos formas: la primera, utilizando las herramientas de desarrollo incluidas en el navegador; la segunda, utilizando alguna extensión para nuestro navegador que nos ayude con este propósito. En esta ocasión ilustraremos el primer método, ya que es el que resulta óptimo para el sitio web con el que trabajaremos.
 
 #### Las herramientas de desarrollo del navegador
@@ -368,11 +368,11 @@ En [este archivo](INSERTAR EL ENLACE CUANDO YA SEPAMOS DÓNDE VA A QUEDAR EL ARC
 
 ## Síntesis
 
-En esta lección conocimos cuáles son las características centrales de una página web que nos permiten extraer su contenido usando técnicas como el _web scraping_. Discutimos también acerca de cómo podemos resguardar que el procedimiento que implementamos se ajuste a las condiciones de uso del sitio del que nos interesa extraer datos. Finalmente, hicimos un primer ejercicio en el que seguimos el flujo de trabajo completo y revisamos las ventajas que tiene trabajar de este modo cuando necesitamos repetir una tarea de extracción.
+En esta lección conocimos cuáles son las características centrales de una página web que nos permiten extraer su contenido usando técnicas como el web scraping. Discutimos también acerca de cómo podemos resguardar que el procedimiento que implementamos se ajuste a las condiciones de uso del sitio del que nos interesa extraer datos. Finalmente, hicimos un primer ejercicio en el que seguimos el flujo de trabajo completo y revisamos las ventajas que tiene trabajar de este modo cuando necesitamos repetir una tarea de extracción.
 
 ## Próximos pasos
 
-Esta es la primera lección de la serie sobre _web scraping_ usando R. En la próxima, aprenderemos a extraer tablas, y a partir de la tercera, veremos cómo crear funciones que nos permitan extraer datos de varias páginas al mismo tiempo.
+Esta es la primera lección de la serie sobre web scraping usando R. En la próxima, aprenderemos a extraer tablas, y a partir de la tercera, veremos cómo crear funciones que nos permitan extraer datos de varias páginas al mismo tiempo.
 
 
 ## Notas
