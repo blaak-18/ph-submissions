@@ -238,7 +238,7 @@ library(readr)
 ```
 
 - **rvest** es el paquete que nos sirve para importar el código html a R y extraer los elementos de la página que nos interesan
-- **stringr** está enfocado en el manejo de cadenas de texto (conocidas en inglés como _strings_); nos servirá para hacer algunas modificaciones en el formato del texto
+- **stringr** está enfocado en el manejo de cadenas de texto (conocidas en inglés como strings); nos servirá para hacer algunas modificaciones en el formato del texto
 - **readr** se utiliza para importar y guardar archivos de texto plano (como csv y txt) y lo usaremos para guardar localmente en nuestro computador el resultado de nuestra extracción
 
 Como mencionamos anteriormente, en este tutorial utilizaremos el operador "pipe" de R Base (`|>`). Si prefieres utilizar `%>%`, tendrías que cargar también el paquete **magrittr** o **dplyr**[^2].
