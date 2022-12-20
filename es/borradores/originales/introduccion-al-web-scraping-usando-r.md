@@ -180,7 +180,7 @@ Si revisamos la parte inferior [del sitio web](https://prensa.presidencia.cl/), 
 {% include figure.html filename="introduccion-al-web-scraping-usando-r-04.png" caption="Declaración de la licencia con que se publican los contenidos en el sitio web de prensa de la Presidencia de Chile" alt="Captura de pantalla del pie de página en que se indica la licencia. El texto dice 'Todos los derechos liberados. Se pueden reproducir, usar y descargar todos los contenidos, sin alterarlos y citando la fuente. Dirección de prensa, Presidencia de la República de Chile'" %}
 
 
-Como en esta ocasión haremos solo una "llamada" al sitio web, no es necesario preocuparnos de los tiempos de espera (crawl delay) que podrían estar indicados en el archivo robots.txt (aunque en este caso en particular el sitio no contiene este archivo). Así que con la información de que los derechos están liberados, ya tenemos todo lo necesario para seguir con el siguiente paso.
+Como en esta ocasión haremos solo una "llamada" al sitio web, no es necesario preocuparnos por los tiempos de espera (crawl delay) que podrían estar indicados en el archivo robots.txt (aunque en este caso en particular el sitio no contiene este archivo). Así que con la información de que los derechos están liberados, ya tenemos todo lo necesario para seguir con el siguiente paso.
 
 
 ### Paso 2. Identificar la etiqueta que contiene los datos que nos interesan
