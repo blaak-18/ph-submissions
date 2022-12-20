@@ -241,7 +241,7 @@ library(readr)
 - **stringr** está enfocado en el manejo de cadenas de texto (conocidas en inglés como strings); nos servirá para hacer algunas modificaciones en el formato del texto
 - **readr** se utiliza para importar y guardar archivos de texto plano (como csv y txt) y lo usaremos para guardar localmente en nuestro computador el resultado de nuestra extracción
 
-Como mencionamos anteriormente, en este tutorial utilizaremos el operador "pipe" de R Base (`|>`). Si prefieres utilizar `%>%`, tendrías que cargar también el paquete **magrittr** o **dplyr**[^2].
+Como mencionamos anteriormente, en este tutorial utilizaremos el operador pipe de R Base (`|>`). Si prefieres utilizar `%>%`, tendrías que cargar también el paquete **magrittr** o **dplyr**[^2].
 
 Ahora que tenemos cargados los paquetes, importaremos el código html de la página que nos interesa y lo guardaremos en un objeto. Para ello, utilizaremos la función `read_html()` del paquete **rvest**:
 
