@@ -115,7 +115,7 @@ Ahora que ya tenemos una idea general de cómo está compuesto un archivo html y
 
 ### Revisar los términos o condiciones de uso
 
-La mayoría de los sitios web incluye una sección en la que se indica cuáles son los términos o condiciones de uso. Usualmente esa información la encontramos en la parte inferior de la página, ya sea porque hay un mensaje que explícitamente dice lo que podemos hacer con el sitio, o bien, porque hay un enlace que nos lleva a un documento más detallado. Por ejemplo, si vas a la parte inferior de cualquier página de Programming Historian, encontrarás el siguiente mensaje: "Programming Historian en español (ISSN: 2517-5769) se publica con una licencia CC-BY".
+La mayoría de los sitios web incluyen una sección en la que se indica cuáles son los términos o condiciones de uso. Usualmente esa información la encontramos en la parte inferior de la página, ya sea porque hay un mensaje que explícitamente dice lo que podemos hacer con el sitio, o bien, porque hay un enlace que nos lleva a un documento más detallado. Por ejemplo, si vas a la parte inferior de cualquier página de Programming Historian, encontrarás el siguiente mensaje: "Programming Historian en español (ISSN: 2517-5769) se publica con una licencia CC-BY".
 
 {% include figure.html filename="introduccion-al-web-scraping-usando-r-03.png" caption="Declaración sobre la licencia de publicación del contenido de Programming Historian" alt="Captura de pantalla del pie de página del sitio de Programming Hisorian en el que se explicita la licencia con que se publican los contenidos" %}
 
