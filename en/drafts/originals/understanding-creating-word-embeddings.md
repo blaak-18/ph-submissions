@@ -45,7 +45,7 @@ In this lesson, you will learn:
 
 This lesson involves running some Python code; a basic familiarity with Python would be helpful, but no particular technical expertise is required. The Programming Historian has a series of [introductory lessons on Python](https://programminghistorian.org/en/lessons/?topic=python&sortType=difficulty&sortOrder=asc) that you may wish to review. 
 
-To run the code, you can use the a [Jupyter notebook for the lesson](https://github.com/NEU-DSG/wwp-public-code-share/blob/WordVectors_Avery/WordVectors/python/Word%20Vectors%20Programming%20Historian%20Tutorial.ipynb) on your own computer. If you're not familiar with Jupyter notebooks, you may wish to review the [Programming Historian lesson on the topic](https://programminghistorian.org/en/lessons/jupyter-notebooks).
+To run the code, you can use the a [Jupyter notebook for the lesson](https://github.com/NEU-DSG/wwp-public-code-share/blob/WordVectors_Avery/WordVectors/python/word-vectors-programming-historian-tutorial.ipynb) on your own computer. If you're not familiar with Jupyter notebooks, you may wish to review the [Programming Historian lesson on the topic](https://programminghistorian.org/en/lessons/jupyter-notebooks).
 
 ### System requirements
 
@@ -139,7 +139,7 @@ The corpus we will be using for this lesson is an open-source collection of nine
 
 ### Accessing the code and data
 
-The first step in building the model is to identify the files you will be using as your corpus. The code below imports the Python libraries that we will be using, and then iterates through the files and sub-directories in a directory that you define, to identify the text files that make up your corpus. As an example for this lesson, we will be working with a collection of recipes sourced from cookbooks on Project Gutenberg. You can download the [Jupyter notebook]((https://github.com/NEU-DSG/wwp-public-code-share/blob/WordVectors_Avery/WordVectors/python/Word%20Vectors%20Programming%20Historian%20Tutorial.ipynb)) and the [corpus](https://github.com/ViralTexts/nineteenth-century-recipes) to train a model on your own computer.
+The first step in building the model is to identify the files you will be using as your corpus. The code below imports the Python libraries that we will be using, and then iterates through the files and sub-directories in a directory that you define, to identify the text files that make up your corpus. As an example for this lesson, we will be working with a collection of recipes sourced from cookbooks on Project Gutenberg. You can download the [Jupyter notebook]((https://github.com/NEU-DSG/wwp-public-code-share/blob/WordVectors_Avery/WordVectors/python/word-vectors-programming-historian-tutorial.ipynb)) and the [corpus](https://github.com/ViralTexts/nineteenth-century-recipes) to train a model on your own computer.
 
 ### Preparing your corpus
 
@@ -391,7 +391,7 @@ for filename in files:
 # test word pairs that we are going to use to evaluate the models
 test_words = [("stir", "whisk"),
              ("cream", "milk"),
-             ("cake", "cupcake"),
+             ("cake", "muffin"),
              ("jam", "jelly"),
              ("reserve", "save"),
              ("bake", "cook")]
